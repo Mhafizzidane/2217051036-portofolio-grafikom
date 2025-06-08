@@ -1,0 +1,99 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: start;
+  height: 100vh;
+  position: relative; /* untuk overlay */
+  color: white; /* teks berwarna putih supaya kontras */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Background foto utama untuk Home dan bagian lain */
+.bg-gaming, 
+.bg-home-image {
+  background-image: url('assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+}
+
+/* Overlay gelap supaya teks tetap terbaca */
+.bg-gaming::before,
+.bg-home-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* 60% gelap */
+  z-index: 0;
+}
+
+/* Konten di atas overlay */
+.bg-gaming > *,
+.bg-home-image > * {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-gray-800 {
+  transition: transform 0.3s ease;
+}
+
+.bg-gray-800:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.modal {
+  backdrop-filter: blur(4px);
+}
+
+body {
+  padding-bottom: 80px;
+}
+/* Jarak antara deskripsi dan riwayat pendidikan */
+#about p.mb-10 {
+  margin-bottom: 2.5rem; /* 40px jarak */
+}
+
+/* Container timeline */
+.timeline {
+  position: relative;
+  margin-left: 20px; /* beri ruang kiri untuk garis vertikal */
+  padding-left: 20px;
+  border-left: 3px solid white; /* garis vertikal timeline */
+}
+
+/* Tiap item timeline */
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 15px;
+}
+
+/* Titik di timeline */
+.timeline-item .dot {
+  position: absolute;
+  left: -30px; /* di luar garis */
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 3px solid #4A90E2; /* warna biru untuk titik */
+  box-sizing: content-box;
+}
+
+/* Optional: teks timeline-item */
+.timeline-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: white;
+}

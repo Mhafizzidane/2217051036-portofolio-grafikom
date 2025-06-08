@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id" class="bg-gray-900 text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Muhammad Hafiz Zidane</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Aktifkan dark mode
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+</head>
+<body class="scroll-smooth scroll-snap-y overflow-y-scroll h-screen snap-mandatory bg-gray-900 text-white">
+
+  <!-- Navbar -->
+<header class="fixed top-0 w-full bg-gray-800 shadow z-50">
+    <nav class="container-fluid d-flex justify-content-between align-items-center p-3">
+        <h1 class="text-xl font-bold">🎮 Portofolio Zidane</h1>
+        <ul class="d-flex list-unstyled mb-0">
+            <li class="mx-3"><a href="#home" class="text-white hover:text-blue-400"><i class="fas fa-home"></i> Home</a></li>
+            <li class="mx-3"><a href="#about" class="text-white hover:text-blue-400"><i class="fas fa-user"></i> About</a></li>
+            <li class="mx-3"><a href="#tugas" class="text-white hover:text-blue-400"><i class="fas fa-tasks"></i> Tugas</a></li>
+            <li class="mx-3"><a href="#kuis" class="text-white hover:text-blue-400"><i class="fas fa-question-circle"></i> Kuis</a></li>
+            <li class="mx-3"><a href="#contact" class="text-white hover:text-blue-400"><i class="fas fa-envelope"></i> Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <!-- Home -->
+  <section id="home" class="bg-home-image">
+    <div class="text-center">
+      <img src="assets/M. Hafiz zidane.JPG" alt="Foto Hafiz Zidane" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white-500"/>
+      <h2 class="text-4xl font-bold mb-2">Muhammad Hafiz Zidane</h2>
+      <p class="text-lg mb-4">Mahasiswa Ilmu Komputer - Universitas Lampung</p>
+      <p class="text-lg mb-4 text-white-600 font-bold">NPM : 2217051036</p>
+      <div class="flex justify-center space-x-4 animate-bounce">
+        <img src="assets/unila.png" class="h-12 w-12" alt="Unila">
+        <img src="assets/Kampus Merdeka.png" class="h-12 w-12" alt="Kampus Merdeka">
+      </div>
+    </div>
+  </section>
+
+<!-- About -->
+<section id="about" class="bg-home-image">
+  <div class="max-w-2xl text-center px-6">
+    <h2 class="text-3xl font-bold mb-4">Tentang Saya</h2>
+    <p class="mb-10">
+      Halo, nama saya Muhammad Hafiz Zidane. Saya adalah mahasiswa jurusan Ilmu Komputer di Universitas Lampung. 
+      Saya memiliki minat terhadap pengembangan web dan analisis data dengan machine learning, terutama analisis data.
+      Dengan semangat dan minat belajar yang tinggi, saya berharap dapat meningkatkan kemampuan programming dan machine learning ke level yang lebih tinggi.
+    </p>
+    <div class="text-left">
+      <h3 class="text-xl font-semibold mb-4">🎓 Riwayat Pendidikan</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="dot"></span>
+          <p>SDN 1 Pringsewu Timur</p>
+        </div>
+        <div class="timeline-item">
+          <span class="dot"></span>
+          <p>SMPN 1 Pringsewu</p>
+        </div>
+        <div class="timeline-item">
+          <span class="dot"></span>
+          <p>SMAN 1 Pringsewu</p>
+        </div>
+        <div class="timeline-item">
+          <span class="dot"></span>
+          <p>Universitas Lampung (2022 - sekarang)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tugas -->
+<section id="tugas" class="bg-home-image">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-6">📝 Tugas</h2>
+    <div class="row">
+      <!-- Tugas 1 -->
+      <div class="col-md-6 mb-4">
+        <div class="bg-gray-800 p-4 rounded shadow cursor-pointer" data-modal="modal-tugas1">
+          <h4 class="font-bold text-lg">📘 Tugas 1</h4>
+          <p>Tokoh berpengaruh dalam dunia teknologi</p>
+        </div>
+      </div>
+      <!-- Tugas 2 -->
+      <div class="col-md-6 mb-4">
+        <div class="bg-gray-800 p-4 rounded shadow cursor-pointer" data-modal="modal-tugas2">
+          <h4 class="font-bold text-lg">📘 Tugas 2</h4>
+          <p>Algoritma Pembentukan Garis DDA</p>
+        </div>
+      </div>
+      <!-- Tugas 3 -->
+      <div class="col-md-6 mb-4">
+        <div class="bg-gray-800 p-4 rounded shadow cursor-pointer" data-modal="modal-tugas3">
+          <h4 class="font-bold text-lg">📘 Tugas 3</h4>
+          <p>Algoritma Lingkaran Bresenham</p>
+        </div>
+      </div>
+      <!-- Tugas 4 -->
+      <div class="col-md-6 mb-4">
+        <div class="bg-gray-800 p-4 rounded shadow cursor-pointer" data-modal="modal-tugas4">
+          <h4 class="font-bold text-lg">📘 Tugas 4</h4>
+          <p>Judul Tugas 4</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Kuis -->
+<section id="kuis" class="bg-home-image">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-6">🧠 Kuis</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="bg-gray-800 p-4 rounded shadow cursor-pointer" data-modal="modal-kuis1">
+          <h4 class="font-bold text-lg">📝 Kuis 1</h4>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="bg-gray-800 p-4 rounded shadow cursor-pointer" data-modal="modal-kuis2">
+          <h4 class="font-bold text-lg">📝 Kuis 2</h4>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="bg-gray-800 p-4 rounded shadow cursor-pointer" data-modal="modal-kuis3">
+          <h4 class="font-bold text-lg">📝 Kuis 3</h4>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="bg-gray-800 p-4 rounded shadow cursor-pointer" data-modal="modal-kuis4">
+          <h4 class="font-bold text-lg">📝 Kuis 4</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Tugas 1 -->
+<div id="modal-tugas1" class="modal hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+  <div class="bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 p-6 text-black relative">
+    <button class="absolute top-2 right-2 text-black font-bold text-xl" onclick="closeModal('modal-tugas1')">&times;</button>
+    <h2 class="text-xl font-bold mb-2">📘 Tugas 1</h2>
+    <p>Tokoh berpengaruh dalam dunia teknologi</p>
+    <a href="https://youtu.be/8_tL3HxHK-c" target="_blank" class="text-blue-500 underline block mt-2">📹 Video</a>
+    <a href="tugas/Tugas 1 PPT_Tokoh Grafika Komputer_Muhammad Hafiz Zidane_2217051036_D.pdf" target="_blank" class="text-blue-500 underline block">⬇ Download PPT</a>
+    <a href="tugas/Tugas 1_Tokoh Grafika Komputer_Muhammad Hafiz Zidane_2217051036_D.pdf" target="_blank" class="text-blue-500 underline block">⬇ Download PDF</a>
+  </div>
+</div>
+
+<!-- Modal Tugas 2 -->
+<div id="modal-tugas2" class="modal hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+  <div class="bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 p-6 text-black relative">
+    <button class="absolute top-2 right-2 text-black font-bold text-xl" onclick="closeModal('modal-tugas2')">&times;</button>
+    <h2 class="text-xl font-bold mb-2">📘 Tugas 2</h2>
+    <p>Algoritma Pembentukan Garis DDA</p>
+    <a href="tugas/Tugas 2_Muhammad Hafiz Zidane_2217051036_CD.pdf" target="_blank" class="text-blue-500 underline block">⬇ Download PDF</a>
+  </div>
+</div>
+
+<!-- Modal Tugas 3 -->
+<div id="modal-tugas3" class="modal hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+  <div class="bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 p-6 text-black relative">
+    <button class="absolute top-2 right-2 text-black font-bold text-xl" onclick="closeModal('modal-tugas3')">&times;</button>
+    <h2 class="text-xl font-bold mb-2">📘 Tugas 3</h2>
+    <p>Algoritma Lingkaran Bresenham</p>
+    <a href="tugas/Tugas 3_2217051036_Muhammad Hafiz Zidane_CD.pdf" target="_blank" class="text-blue-500 underline block">⬇ Download PDF</a>
+  </div>
+</div>
+
+<!-- Modal Tugas 4 -->
+<div id="modal-tugas4" class="modal hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+  <div class="bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 p-6 text-black relative">
+    <button class="absolute top-2 right-2 text-black font-bold text-xl" onclick="closeModal('modal-tugas4')">&times;</button>
+    <h2 class="text-xl font-bold mb-2">📘 Tugas 4</h2>
+    <p>Judul Tugas 4</p>
+    <a href="tugas/Tugas 4_2217051036_Muhammad Hafiz Zidane_CD.pdf" target="_blank" class="text-blue-500 underline block">⬇ Download PDF</a>
+  </div>
+</div>
+
+<!-- Modal Kuis 1 -->
+<div id="modal-kuis1" class="modal hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+  <div class="bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 p-6 text-black relative">
+    <button class="absolute top-2 right-2 text-black font-bold text-xl" onclick="closeModal('modal-kuis1')">&times;</button>
+    <h2 class="text-xl font-bold mb-2">📝 Kuis 1</h2>
+     <a href="https://youtu.be/mBOeBXSVXRk" target="_blank" class="text-blue-500 underline block mt-2">📹 Video</a>
+  </div>
+</div>
+
+<!-- Modal Kuis 2 -->
+<div id="modal-kuis2" class="modal hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+  <div class="bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 p-6 text-black relative">
+    <button class="absolute top-2 right-2 text-black font-bold text-xl" onclick="closeModal('modal-kuis2')">&times;</button>
+    <h2 class="text-xl font-bold mb-2">📝 Kuis 2</h2>
+    <a href="https://youtu.be/ZeT5Z_ujyLQ" target="_blank" class="text-blue-500 underline block mt-2">📹 Video</a>
+  </div>
+</div>
+
+<!-- Modal Kuis 3 -->
+<div id="modal-kuis3" class="modal hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+  <div class="bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 p-6 text-black relative">
+    <button class="absolute top-2 right-2 text-black font-bold text-xl" onclick="closeModal('modal-kuis3')">&times;</button>
+    <h2 class="text-xl font-bold mb-2">📝 Kuis 3</h2>
+    <a href="https://youtu.be/YgVuj630xxc" target="_blank" class="text-blue-500 underline block mt-2">📹 Video</a>
+  </div>
+</div>
+
+<!-- Modal Kuis 4 -->
+<div id="modal-kuis4" class="modal hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+  <div class="bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 p-6 text-black relative">
+    <button class="absolute top-2 right-2 text-black font-bold text-xl" onclick="closeModal('modal-kuis4')">&times;</button>
+    <h2 class="text-xl font-bold mb-2">📝 Kuis 4</h2>
+    <a href="https://youtu.be/p1cUolbzAKc" target="_blank" class="text-blue-500 underline block mt-2">📹 Video</a>
+  </div>
+</div>
+
+<!-- Kontak -->
+<section id="contact" class="bg-home-image">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold">Contact</h2>
+      <p class="mt-2 text-gray-600">Silakan hubungi saya melalui informasi di bawah atau isi formulir kontak.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <!-- Info Kontak -->
+      <div class="bg-black rounded-lg shadow-lg p-8">
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold mb-1">📍 Address</h3>
+          <p>Jl. Raya Pringsewu No. 27, Lampung, Indonesia</p>
+        </div>
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold mb-1">📞 Call Us</h3>
+          <p>+62 812 3456 7890</p>
+        </div>
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold mb-1">📧 Email Us</h3>
+          <p><a href="mailto:hfzzidane27@gmail.com" class="text-blue-500 underline">hfzzidane27@gmail.com</a></p>
+        </div>
+        <iframe class="w-full h-48 rounded" src="https://maps.google.com/maps?q=pringsewu&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <!-- Formulir Kontak -->
+      <form class="bg-white rounded-lg shadow-lg p-8 space-y-4">
+        <div class="flex flex-col md:flex-row gap-4">
+          <input type="text" placeholder="Your Name" class="w-full md:w-1/2 border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          <input type="email" placeholder="Your Email" class="w-full md:w-1/2 border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        </div>
+        <input type="text" placeholder="Subject" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        <textarea placeholder="Message" rows="6" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+  <footer id="footer" class="bg-gray-800 text-white p-4 text-center mt-12">
+    &copy; 2025 Muhammad Hafiz Zidane. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- JavaScript -->
+  <script>
+  document.querySelectorAll('[data-modal]').forEach(item => {
+    item.addEventListener('click', function () {
+      const modalId = this.getAttribute('data-modal');
+      document.getElementById(modalId).classList.remove('hidden');
+    });
+  });
+
+  function closeModal(id) {
+    document.getElementById(id).classList.add('hidden');
+  }
+  </script>
+</body>
+</html>
